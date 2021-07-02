@@ -10,6 +10,7 @@
 
 }
 
+/** remove the spacing at the left and right corner of the page**/
 .navbar {
     padding: 1rem 0;
 }
@@ -18,18 +19,7 @@
     border: none;
 }
 
-
-
-
-@media screen and (min-width: 768px) {
-    .collapse navbar-collapse {
-        display: flex;
+.header-nav {
+    padding-right: 50px;
+    padding-left: 50px;
 }
-}
-
-body {
-    background: url() no-repeat center fixed;
-    height: 100vh;
-    width: 100%;
- 
-};
