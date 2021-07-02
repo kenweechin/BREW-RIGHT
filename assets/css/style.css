@@ -1,5 +1,5 @@
 .navbar-brand img {
-    width: 140px;
+    width: 7rem;
 }
 
 .navbar-brand {
@@ -23,3 +23,12 @@
     padding-right: 50px;
     padding-left: 50px;
 }
+
+.landing-image {
+        background: url("../images/landing.jpg") no-repeat center;
+        height: 100vh;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+}
+ 
