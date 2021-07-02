@@ -1,0 +1,35 @@
+.navbar-brand img {
+    width: 140px;
+}
+
+.navbar-brand {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .collapse navbar-collapse {
+        display: flex;
+}
+}
+
+body {
+    background: url() no-repeat center fixed;
+    height: 100vh;
+    width: 100%;
+ 
+};
