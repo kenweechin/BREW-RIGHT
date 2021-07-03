@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 .navbar-brand img {
-    width: 7rem;
+    width: 13rem;
 }
 
 .navbar-brand {
@@ -54,8 +54,7 @@
 
 @media screen and (min-width: 768px) {
     .navbar-brand img {
-        height: 3.5rem;
-        width: 10rem;
+        width: 18rem;
     }
 
     .landing-image {
