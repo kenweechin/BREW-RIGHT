@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 .navbar-brand img {
     width: 7rem;
 }
@@ -34,6 +36,13 @@
     background-position: center center;
 }
 
+.jumbotron {
+    background: transparent;
+}
+
+.landing-text {
+    display: none;
+}
 
 @media screen and (min-width: 430px) {
     .landing-image {
@@ -41,7 +50,7 @@
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    }
+}
 
 @media screen and (min-width: 768px) {
     .navbar-brand img {
@@ -51,5 +60,14 @@
 
     .landing-image {
         height: 70vh;
+    }
+
+    .landing-text {
+        font-size: 3rem;
+        font-family: 'playfair display', sans-serif;
+        color: #F1FAEE;
+        text-align: center;
+        display: block;
+        margin-top: 8rem;
     }
 }
