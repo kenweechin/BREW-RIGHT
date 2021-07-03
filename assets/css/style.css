@@ -3,7 +3,7 @@
 }
 
 .navbar-brand {
-    position:absolute;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 10px;
@@ -19,23 +19,37 @@
     border: none;
 }
 
+/** create suitable padding to the web body**/
 .header-nav {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .landing-image {
-        background: url("../images/landing.jpg") no-repeat center;
-        height: 100vh;
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
+    background: url("../images/landing.jpg") no-repeat center;
+    height: 13rem;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
 }
+
+
+@media screen and (min-width: 430px) {
+    .landing-image {
+        height: 25rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    }
 
 @media screen and (min-width: 768px) {
     .navbar-brand img {
         height: 3.5rem;
         width: 10rem;
     }
+
+    .landing-image {
+        height: 70vh;
+    }
 }
- 
