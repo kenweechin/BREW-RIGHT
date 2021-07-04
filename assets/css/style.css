@@ -44,6 +44,13 @@
     display: none;
 }
 
+/** middle section of the page **/
+.coffee-variety-title {
+    font-family: 'playfair display', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 @media screen and (min-width: 430px) {
     .landing-image {
         height: 25rem;
