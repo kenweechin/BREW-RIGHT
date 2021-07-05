@@ -52,7 +52,9 @@
     margin-top: 1.5rem;
 }
 
-.container-card-title {
+.container-card-title-first,
+.container-card-title-second
+ {
     padding-right: 1rem;
     padding-left: 1rem;
 }
