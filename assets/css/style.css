@@ -59,13 +59,10 @@
     padding-left: 1rem;
 }
 
-img.coffee-one,
-img.coffee-two,
-img.coffee-three,
-img.coffee-four {
-    max-width: 100%;
-    max-height: 9rem;
-    object-fit: cover;
+/** auto resize the image to fit the container in different screen sizes**/
+container-card-title {
+    width: 17.8rem;
+    height: 9rem;
 }
 
 @media screen and (min-width: 430px) {
