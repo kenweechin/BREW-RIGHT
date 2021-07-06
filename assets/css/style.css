@@ -60,7 +60,7 @@
 }
 
 /** auto resize the image to fit the container in different screen sizes**/
-container-card-title {
+.container-card-title {
     width: 17.8rem;
     height: 9rem;
 }
