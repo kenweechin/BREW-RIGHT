@@ -27,21 +27,14 @@
     padding-left: 1rem;
 }
 
-.landing-image {
-    background: url("../images/landing.jpg") no-repeat center;
-    height: 13rem;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    background-position: center center;
+.carousel-caption>h1 {
+    font-size: 0.85rem;
+    font-family: 'playfair display', sans-serif;
 }
-
-.jumbotron {
-    background: transparent;
-}
-
-.landing-text {
-    display: none;
+.carousel-caption>p   {
+    font-size: 0.65rem;
+    font-family: 'playfair display', sans-serif;
+    font-style: italic;
 }
 
 /** middle section of the page **/
@@ -78,16 +71,12 @@
         width: 18rem;
     }
 
-    .landing-image {
-        height: 70vh;
-    }
-
-    .landing-text {
+    .carousel-caption>h1 {
         font-size: 3rem;
         font-family: 'playfair display', sans-serif;
         color: #F1FAEE;
-        text-align: center;
-        display: block;
-        margin-top: 8rem;
+    }
+    .carousel-caption>p   {
+        font-size: 1rem;
     }
 }
