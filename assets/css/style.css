@@ -52,6 +52,46 @@
     padding-left: 1rem;
 }
 
+/** Overlay text on the image **/
+.card {
+    position: relative;
+    text-align: center;
+}
+
+.center-text-coffee-one,
+.center-text-coffee-two {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'playfair display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.center-text-coffee-three {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #093145;
+        font-family: 'playfair display', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+}
+
+.center-text-coffee-four {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c1c7c9;
+    font-family: 'playfair display', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 /** auto resize the image to fit the container in different screen sizes**/
 .container-card-title {
     width: 17.8rem;
