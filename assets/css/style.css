@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display&display=swap');
 
 .navbar-brand img {
     width: 10rem;
@@ -109,8 +109,12 @@
 .text-of-order {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-family: 'dosis', sans-serif;
+    color: #343434;
+    font-weight: 900;
+    text-align: left;
 }
-
+ 
 .order-method {
     background: url("../images/order.jpg") no-repeat center;
     height: 10rem;
