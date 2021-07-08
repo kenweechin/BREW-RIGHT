@@ -98,6 +98,19 @@
     height: 9rem;
 }
 
+/** how_to_order.html page**/
+.how-to-order-title {
+    font-family: 'playfair display', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.text-of-order {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 430px) {
     .landing-image {
         height: 25rem;
