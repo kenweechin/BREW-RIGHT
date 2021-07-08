@@ -31,7 +31,8 @@
     font-size: 0.85rem;
     font-family: 'playfair display', sans-serif;
 }
-.carousel-caption>p   {
+
+.carousel-caption>p {
     font-size: 0.65rem;
     font-family: 'playfair display', sans-serif;
     font-style: italic;
@@ -46,8 +47,7 @@
 }
 
 .container-card-title-first,
-.container-card-title-second
- {
+.container-card-title-second {
     padding-right: 1rem;
     padding-left: 1rem;
 }
@@ -71,14 +71,14 @@
 }
 
 .center-text-coffee-three {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #093145;
-        font-family: 'playfair display', sans-serif;
-        font-size: 1.5rem;
-        font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #093145;
+    font-family: 'playfair display', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .center-text-coffee-four {
@@ -111,6 +111,15 @@
     margin-bottom: 1rem;
 }
 
+.order-method {
+    background: url("../images/order.jpg") no-repeat center;
+    height: 10rem;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+
+}
+
 @media screen and (min-width: 430px) {
     .landing-image {
         height: 25rem;
@@ -129,7 +138,8 @@
         font-family: 'playfair display', sans-serif;
         color: #F1FAEE;
     }
-    .carousel-caption>p   {
+
+    .carousel-caption>p {
         font-size: 1rem;
     }
 }
