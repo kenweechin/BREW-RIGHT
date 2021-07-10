@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BREW RIGHT</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
         integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    
+
 </head>
 
 <body>
@@ -49,23 +52,36 @@
         <div class="order-method"></div>
 
         <div>
-            <p class="text-of-order">Aside from ordering in our shops, we are offering online ordering method which is delivering your order to your door. Our coffee 
-                shops are offering 4 different types of coffee brewing methods: <br> <em><strong>French Press</em></strong>, <em><strong>Moka Pot</em></strong>, <em><strong>Ibrik</em></strong>, and <em><strong>Pour Over</em></strong>.
-            <br> We have a few professional barista teams with all the brewing equipment ready for the delivery order. They will drive to your door and brew the coffee that you have ordered on the spot. We want our customer to feel the interaction between the barista and the coffee brewing process, experience the stunning sensation that coffee aroma brings to you.  
-            <br> You can go to our <a href= "index.html">Home Page</a> and select your choice. You will be notified to key in your address and contact details after you have submitting the payment and our delivery team will send you their live location and prior upon arrival. </p>
+            <p class="text-of-order">Aside from ordering in our shops, we are offering online ordering method which is
+                delivering your order to your door. Our coffee
+                shops are offering 4 different types of coffee brewing methods: <em><strong>French Press</em></strong>,
+                <em><strong>Moka Pot</em></strong>, <em><strong>Ibrik</em></strong>, and <em><strong>Pour
+                        Over</em></strong>.
+                <br> We have a few professional barista teams with all the brewing equipment ready for the delivery
+                order. They will drive to your door and brew the coffee that you have ordered on the spot. We want our
+                customer to feel the interaction between the barista and the coffee brewing process, experience the
+                stunning sensation that coffee aroma brings to you.
+                <br> You can go to our <a href="index.html">Home Page</a> and select your choice. You will be notified
+                to key in your address and contact details after you have submitting the payment and our delivery team
+                will send you their live location and prior upon arrival. </p>
         </div>
 
+        <div id="map"></div>
 
-
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        <script>
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 3,
+                    center: {
+                        lat: 46.619261,
+                        lng: -33.134766
+                    }
+                });
+            }
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJw6mHuI1-PRilMspncV15JtFFmr_NRUo&callback=initMap&libraries=&v=weekly"
+            async></script>
 </body>
+
+</html>
