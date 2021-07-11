@@ -132,6 +132,25 @@ div#map {
     width: 100%;
 }
 
+/** footer section**/
+.social-media-title {
+        font-family: 'playfair display', sans-serif;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 1.1rem;
+}
+
+.social-networks {
+    display: inline-block;
+}
+
+.social-network-list {
+    text-align: center;
+    padding: 0;
+}
+
+
+
 @media screen and (min-width: 430px) {
     .landing-image {
         height: 25rem;
