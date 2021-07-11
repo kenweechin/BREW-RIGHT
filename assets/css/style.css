@@ -47,7 +47,9 @@
 }
 
 .container-card-title-first,
-.container-card-title-second {
+.container-card-title-second,
+.text-of-order-one,
+.text-of-order-two {
     padding-right: 1rem;
     padding-left: 1rem;
 }
@@ -106,7 +108,8 @@
     margin-top: 1.5rem;
 }
 
-.text-of-order {
+.text-of-order-one,
+.text-of-order-two {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-family: 'dosis', sans-serif;
