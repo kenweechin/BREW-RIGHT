@@ -133,7 +133,8 @@ div#map {
 }
 
 /** footer section**/
-.social-media-title {
+.social-media-title,
+.about-brewright {
         font-family: 'playfair display', sans-serif;
         text-align: center;
         font-size: 1.1rem;
@@ -142,6 +143,12 @@ div#map {
 
 .social-networks {
     display: inline-block;
+}
+
+.social-networks i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #4E8098;
 }
 
 .social-network-list {
