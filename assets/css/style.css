@@ -117,7 +117,7 @@
     font-weight: 900;
     text-align: left;
 }
- 
+
 .order-method {
     background: url("../images/order.jpg") no-repeat center;
     height: 10rem;
@@ -135,10 +135,18 @@ div#map {
 /** footer section**/
 .social-media-title,
 .about-brewright {
-        font-family: 'playfair display', sans-serif;
-        text-align: center;
-        font-size: 1.1rem;
-        margin-top: 1.1rem;
+    font-family: 'playfair display', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 1.1rem;
+    text-align: center;
+}
+
+.about-brewright-text {
+    font-family: 'playfair display', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+    text-align: justify;
 }
 
 .social-networks {
