@@ -132,6 +132,13 @@ div#map {
     width: 100%;
 }
 
+/** contact.html page*/
+.contact-background-image {
+    background: url("../images/landing.jpg")no-repeat center;
+    height: 100vh;
+    background-size: cover;
+}
+
 /** footer section**/
 .social-media-title,
 .about-brewright {
@@ -164,11 +171,10 @@ div#map {
     padding: 0;
 }
 
-@media screen and (min-width: 430px) {
-    .landing-image {
-        height: 25rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
+@media screen and (min-width: 320px) {
+    .contact-background-image {
+        background-position: 20% 50%;
+        
     }
 }
 
