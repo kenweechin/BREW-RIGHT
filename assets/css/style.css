@@ -9,7 +9,21 @@
     left: 50%;
     transform: translateX(-50%);
     top: 10px;
+}
 
+a.nav-link {
+    font-family: 'playfair display', sans-serif;
+}
+
+ #order-page, #contact-page{
+    color:#00C49A;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #0B7A75;
+    transition: .3s all ease-in-out;
+    border-radius: .3rem;
+   
 }
 
 /** remove the spacing at the left and right corner of the page**/
