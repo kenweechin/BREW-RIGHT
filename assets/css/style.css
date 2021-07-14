@@ -157,6 +157,11 @@ div#map {
     background-size: cover;
 }
 
+.contact-title-text,
+.container-contact{
+    text-align: center;
+}
+
 /** footer section**/
 .social-media-title,
 .about-brewright {
