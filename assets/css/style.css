@@ -160,8 +160,23 @@ div#map {
 .contact-title-text,
 .container-contact{
     text-align: center;
+    font-family: 'playfair display', sans-serif;
 }
 
+.contact-title-text>h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.text>p {
+    font-weight: bold;
+}
+
+ 
 /** footer section**/
 .social-media-title,
 .about-brewright {
@@ -197,7 +212,6 @@ div#map {
 @media screen and (min-width: 320px) {
     .contact-background-image {
         background-position: 20% 50%;
-        
     }
 }
 
