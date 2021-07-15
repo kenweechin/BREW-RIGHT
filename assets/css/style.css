@@ -155,6 +155,46 @@ div#map {
     background: url("../images/landing.jpg")no-repeat center;
     height: 100vh;
     background-size: cover;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/** part of the css code for the contact page are derived and edited from "Online Tutorial" channel on Youtube platfrom**/
+.container-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-contact .contactDetail {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-contact .contactDetail .area-1 .area-2 {
+    position: relative;
+    display: flex;
+    padding: 1.3rem 0;
+}
+
+.container-contact .contactDetail .area .icon {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    font-size: 1rem;
+}
+
+.container-contact .contactDetail .area .text {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .contact-title-text,
@@ -176,7 +216,6 @@ h3 {
     font-weight: bold;
 }
 
- 
 /** footer section**/
 .social-media-title,
 .about-brewright {
