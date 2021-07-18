@@ -56,7 +56,7 @@ a.nav-link {
     font-style: italic;
 }
 
-/** middle section of the page **/
+/** middle section of the index.html page **/
 .coffee-variety-title {
     font-family: 'playfair display', sans-serif;
     text-align: center;
@@ -151,69 +151,89 @@ div#map {
 }
 
 /** contact.html page*/
+/** Part of the css code for the contact page are derived and edited from "CodingSnow" channel on Youtube platfrom**/
 .contact-background-image {
     background: url("../images/landing.jpg")no-repeat center;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
-    display:flex;
-    flex-direction: column;
-    position: relative;
 }
 
-/** part of the css code for the contact page are derived and edited from "Online Tutorial" channel on Youtube platfrom**/
-.container-contact {
+.container-contactDetail {
     width: 100%;
     display: flex;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-}
-
-.container-contact .contactDetail {
     display: flex;
-    width: 50%;
-    flex-direction: column;
-    text-align: center;
-}
-
-.container-contact .contactDetail .area-1 .area-2 {
-    position: relative;
-    display: flex;
-    padding: 1.3rem 0;
-}
-
-.container-contact .contactDetail .area .icon {
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60%;
+    line-height: 5rem;
+    margin-right: 1rem;
     font-size: 1rem;
-}
-
-.container-contact .contactDetail .area .text {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.contact-title-text,
-.container-contact{
-    text-align: center;
     font-family: 'playfair display', sans-serif;
+    flex-direction: column;
+}
+ 
+.contact-info i{
+    margin-right: 1rem;
 }
 
-.contact-title-text>h2 {
-    font-size: 2rem;
+button, input, optgroup, select, textarea {
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+
+.contact-info, .contact-title-text {
+    flex: 1;
+}
+
+.contact-title-text h2{
+    text-align: center;
+}
+
+.contact-title-text .text-box-1, .text-box-2 {
+    border: none;
+    background-color: #343434;
+    color: #fff;
+    width: calc(50% - 0.6rem);
+    height: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
-h3 {
-    font-size: 1.5rem;
+.text-box-1 {
+    margin-bottom: 1.5rem !important;
 }
 
-.text>p {
-    font-weight: bold;
+.contact-title-text textarea {
+    background-color: #343434;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    min-height: 5rem;
+    max-height: 10rem;
+    resize: vertical;
+    border-radius: 1rem;
+  
+}
+
+.contact-title-text .submit-btn {
+    float: right;
+    margin-right: 1rem;
+    background-color: #F9A03F;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    padding: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #6D213C;
 }
 
 /** footer section**/
@@ -252,11 +272,19 @@ h3 {
     .contact-background-image {
         background-position: 20% 50%;
     }
+    
+    .text-box {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .navbar-brand img {
         width: 18rem;
+    }
+
+    .container-contactDetail {
+        flex-direction: row;
     }
 
     .carousel-caption>h1 {
