@@ -188,6 +188,7 @@ button, input, optgroup, select, textarea {
 
 .contact-title-text h2{
     text-align: center;
+    margin-top: 3rem;
 }
 
 .contact-title-text .text-box-1, .text-box-2 {
@@ -295,5 +296,9 @@ button, input, optgroup, select, textarea {
 
     .carousel-caption>p {
         font-size: 1rem;
+    }
+
+    .contact-info {
+        font-size: 1.3rem;
     }
 }
