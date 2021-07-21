@@ -12,6 +12,13 @@
         integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_UCxsFe2CkXh4w1HrWICfK");
+        })();
+    </script>
 </head>
 
 <body>
@@ -50,11 +57,12 @@
             </div>
             <div class="contact-title-text">
                 <h2>Contact Us</h2>
-                <form class="contact-title" method="POST" action="#"></form>
-                <input type="text" class="text-box-1" name="name" placeholder="Full Name" required>
-                <input type="email" class="text-box-2" name="email" placeholder="Email Address" required>
-                <textarea name="text-message" rows="5" placeholder="Your message to us" required></textarea>
-                <input type="submit" class="submit-btn" name="submit" value="Submit Your Request">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" class="text-box-1" name="name" placeholder="Full Name" required>
+                    <input type="email" class="text-box-2" name="emailaddress" placeholder="Email Address" required>
+                    <textarea rows="5" name="coffeerequest" placeholder="Your message to us" required></textarea>
+                    <button type="submit" class="submit-btn">Submit Your Request</button>
+                </form>
             </div>
         </div>
     </section>
@@ -68,6 +76,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="assets/js/sendEmail.js"></script> 
 </body>
-
 </html>
