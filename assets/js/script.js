@@ -1,13 +1,14 @@
+//Mouseover event for the Order Now button in the home page
 document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByTagName("button");
+    let buttons = document.getElementsByClassName("orderButton");
 
-    for (let button of buttons) {
-        button.addEventListener("mouseover", function(){
-            button.textContent = "Good Choice!";
+    for (let orderButton of buttons) {
+        orderButton.addEventListener("mouseover", function(){
+            orderButton.textContent = "Good Choice!";
         })
 
-        button.addEventListener("mouseout", function(){
-            button.textContent = "Order Now";
+        orderButton.addEventListener("mouseout", function(){
+            orderButton.textContent = "Order Now";
         })
     }
 })
