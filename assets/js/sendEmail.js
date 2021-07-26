@@ -1,3 +1,8 @@
+//to prevent the submit to be executed before the input to the form 
+document.getElementByIdClassName("submitButton").addEventListener("submit", function(event){
+    event.preventDefault();
+})
+
 function sendMail(contactForm) {
     emailjs.send("service_44tf1cv", "brewright", {
             "from_name": contactForm.name.value,
@@ -6,21 +11,13 @@ function sendMail(contactForm) {
         })
         .then(
             function (response) {
-                console.log("SUCCESS", response);
+                alert("You had submitted your request. We will get back to you soon!", response);
             },
             function (error) {
-                console.log("FAILED", error);
+                alert("Please retry again", error);
             }
         );
     return false; // To block from loading a new page
 }
 
-//alert method for the contact page after user has submitted request.
-let button = document.getElementsByClassName("submitButton");
-    
-    for (let submitButton of button){
-        submitButton.addEventListener("click", function () {
-            alert("You had submitted your request. We will get back to you soon!");
-        })
-    }
-    
+
