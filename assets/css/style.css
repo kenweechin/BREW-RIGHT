@@ -57,7 +57,7 @@ a.nav-link {
 }
 
 /** cart section of the index.html page **/
-.fa-cart-arrow-down:before, #cart-number {
+.fa-cart-arrow-down:before, .cart-number {
     color: #2D3047;
 }
 
