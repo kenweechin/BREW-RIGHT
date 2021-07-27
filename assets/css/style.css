@@ -112,6 +112,13 @@ a.nav-link {
     font-weight: bold;
 }
 
+#coffee-price{
+    color:#2B2D42;
+    font-family: 'playfair display', sans-serif;
+    font-weight: bold;
+}
+
+
 /** auto resize the image to fit the container in different screen sizes**/
 .container-card-title {
     width: 17.8rem;
