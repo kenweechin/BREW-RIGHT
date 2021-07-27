@@ -56,6 +56,11 @@ a.nav-link {
     font-style: italic;
 }
 
+/** cart section of the index.html page **/
+.fa-cart-arrow-down:before, #cart-number {
+    color: #2D3047;
+}
+
 /** middle section of the index.html page **/
 .coffee-variety-title {
     font-family: 'playfair display', sans-serif;
