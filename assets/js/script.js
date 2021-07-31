@@ -42,6 +42,7 @@ let items = [{
 for (let i = 0; i < cart.length; i++) {
     cart[i].addEventListener("click", function () {
         cartQuantity(items[i])
+        costTotal(items[i])
     })
 }
 
@@ -63,11 +64,11 @@ function cartQuantity(items) {
 }
 
 function setCoffeeProducts(items) {
-    let cartProduct = localStorage.getItem('coffeeInCart');
+    let cartProduct = localStorage.getItem("coffeeInCart");
 
     cartProduct = JSON.parse(cartProduct);
 
-    if (cartProduct != null) {
+    if (cartProduct !== null) {
          if (cartProduct[items.name] == undefined) {
              cartProduct = {
                 ...cartProduct,
@@ -84,6 +85,18 @@ function setCoffeeProducts(items) {
     }
 
     localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
+}
+
+function costTotal(items) {
+   
+    let productTotal = localStorage.getItem("costTotal", items.price);
+    
+    if (productTotal !== null) {
+        productTotal = parseFloat(productTotal);
+        localStorage.setItem("costTotal", + productTotal + items.price);
+    }else {
+        localStorage.setItem("costTotal", items.price);
+    }
 }
 
 function loadedCart() {
