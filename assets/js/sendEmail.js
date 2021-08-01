@@ -1,7 +1,7 @@
 //to prevent the submit to be executed before the input to the form 
-document.getElementByIdClassName("submitButton").addEventListener("submit", function(event){
+document.getElementByID("submitButton").addEventListener("submit", function(event){
     event.preventDefault();
-})
+});
 
 function sendMail(contactForm) {
     emailjs.send("service_44tf1cv", "brewright", {

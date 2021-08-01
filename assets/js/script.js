@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let orderButton of buttons) {
         orderButton.addEventListener("mouseover", function () {
             orderButton.textContent = "Great Choice!";
-        })
+        });
         orderButton.addEventListener("click", function () {
             alert("Your choice has been added to the cart!");
-        })
+        });
         orderButton.addEventListener("mouseout", function () {
             orderButton.textContent = "Order Now";
-        })
+        });
     }
-})
+});
 
 //Carts section
 let cart = document.querySelectorAll(".orderButton");
@@ -37,13 +37,13 @@ let items = [{
         price: 5.99,
         insideCart: 0
     }
-]
+];
 
 for (let i = 0; i < cart.length; i++) {
     cart[i].addEventListener("click", function () {
-        cartQuantity(items[i])
-        costTotal(items[i])
-    })
+        cartQuantity(items[i]);
+        costTotal(items[i]);
+    });
 }
 
 function cartQuantity(items) {
@@ -73,7 +73,7 @@ function setCoffeeProducts(items) {
              cartProduct = {
                 ...cartProduct,
                 [items.name]: items
-             }
+             };
          }
         cartProduct[items.name].insideCart += 1;
     } else {
@@ -81,7 +81,7 @@ function setCoffeeProducts(items) {
 
         cartProduct = {
             [items.name]: items
-        }
+        };
     }
 
     localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
