@@ -281,8 +281,14 @@ button, input, optgroup, select, textarea {
     color: #2D3047;
 }
 
+
+
+
+
+
+
 /** cart.html page **/
-.shopping-cart {
+.shopping-cart-title {
     font-family: 'playfair display', sans-serif;
     text-align: center;
     font-size: 1.5rem;
@@ -290,11 +296,45 @@ button, input, optgroup, select, textarea {
     margin-bottom: 3rem;
 }
 
+.items-container {
+    justify-content: space-around;
+    margin: 4rem auto;
+}
+
+.items-added i{
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    color: darkblue;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
 .items-header {
     display: flex;
+    width: 100%;
+    margin: 0 auto;
     justify-content: space-around;
-    font-family: 'playfair display', sans-serif;
+    font-family: 'playfair display', sans-serif;  
 }
+
+ 
+.items-title,
+.items-price,
+.items-quantity,
+.items-total  {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
 
 /** responsiveness adjustment **/
 @media screen and (min-width: 320px) {
@@ -308,6 +348,16 @@ button, input, optgroup, select, textarea {
 
     div.items-container .items-header h5  {
         font-size: 0.8rem;
+    }
+
+    .items-title, 
+    .items-price,
+    .items-quantity,
+    .items-total
+    {
+        font-size: 0.8rem;
+        font-family: 'playfair display', sans-serif;
+
     }
 }
 
@@ -336,5 +386,15 @@ button, input, optgroup, select, textarea {
 
     div.items-container .items-header h5  {
         font-size: 1.5rem;
+    }
+
+    .items-title, 
+    .items-price,
+    .items-quantity,
+    .items-total
+    {
+        font-size: 1.6rem;
+        font-family: 'playfair display', sans-serif;
+
     }
 }

@@ -69,12 +69,12 @@ function setCoffeeProducts(items) {
     cartProduct = JSON.parse(cartProduct);
 
     if (cartProduct !== null) {
-         if (cartProduct[items.name] == undefined) {
-             cartProduct = {
+        if (cartProduct[items.name] == undefined) {
+            cartProduct = {
                 ...cartProduct,
                 [items.name]: items
-             };
-         }
+            };
+        }
         cartProduct[items.name].insideCart += 1;
     } else {
         items.insideCart = 1;
@@ -88,16 +88,46 @@ function setCoffeeProducts(items) {
 }
 
 function costTotal(items) {
-   
     let productTotal = localStorage.getItem("costTotal", items.price);
-    
+
     if (productTotal !== null) {
         productTotal = parseFloat(productTotal);
-        localStorage.setItem("costTotal", + productTotal + items.price);
-    }else {
+        localStorage.setItem("costTotal", +productTotal + items.price);
+    } else {
         localStorage.setItem("costTotal", items.price);
     }
 }
+
+function cartDisplay() {
+    let cartProduct = localStorage.getItem("coffeeInCart");
+    cartProduct = JSON.parse(cartProduct);
+
+    let itemsContainer = document.querySelector(".items-added");
+    if (cartProduct && itemsContainer) {
+        itemsContainer.innerHTML = '';
+        Object.values(cartProduct).map(product => {
+            itemsContainer.innerHTML += `
+            <div class="items-added">
+                <span>${product.name}</span>
+                <i class="fas fa-trash-alt"></i> 
+            </div>
+            <div class ="items-price">
+                ${product.price}
+            </div>
+            <div class="items-quantity">
+                <i class="fas fa-minus-square"></i>
+                <span>${product.insideCart}</span>
+                <i class="fas fa-plus-square"></i>
+            </div>
+            <div class="items-total">
+                ${product.insideCart * product.price}
+            </div>
+            `
+        });
+    }
+}
+
+cartDisplay();
 
 function loadedCart() {
     let cartNumber = localStorage.getItem("cartQuantity");
