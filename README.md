@@ -40,4 +40,30 @@ The website consists of:
   9.  I want to see the quantity that I have ordered on the cart icon on the top page of the website. 
   10. I want to see the list of the products ordered when clicking on the cart icon, which will navigate to a new page, and shows the total price of the products ordered. 
 
+### **Design Choices**
+![Responsive Mockup](wireframes/mockup.png)
 
+* Imagery 
+    * The background image on the home page is using the image full of coffee beans with a stirrer. This is to demonstrate the main purpose of the website, which act as a representative element of the website is focusing on. This is to attract user's attention and yield a trust emotion toward the quality of the beans that the website is offering to the user. 
+    * The product images on the home page are the exact coffee brewing types. Hence, the user would have an idea of the coffee brewing mechanism that they are going to order. Each of the products' images have the name labelled thus the user will get to know the types of the brewing coffee. 
+    * The background on the contact page is using a white tone image with a cup of coffee placing on a table. The purpose of this is to create a relaxing ambience for the user.
+    * The landing page image on the how to order page is using a significant ORDER sign board to show the purpose of the page to the user.
+* Color Scheme
+    * The main colors of the website (except the images) used are generally in white tone. This is because all the images used on the website are generally in an earthy tone, since the products are coffee based. Hence, the colors of the images themselves are sufficient to yield colors that able to enrich the website. 
+    * The main home navigation link, which situated at the top middle of all pages, name: BREW RIGHT, is colored in dark purple, to make the website's brand stand out from the others navigation link.
+    * Dark green is used for the top page of navigation links when the user hovers over the links to present a great contrast to the white tone background. 
+    * The navigation links are showing a light green color when the user is on that particular page, to present which page the user is currently on. 
+* Typography
+    * Playfair Display font is the main font used throughout the website pages with Sans Serif as the fallback font. 
+    * Playfair Display font looks elegant either as a title or the content on a website. It tends to yield a trustable emotion to the user as well which is a vital element for a website business. 
+* Styling
+    * Each of the links/pages has the same navigation menu so the user can direct to the other main navigation sites when they are browsing particular links.
+    * Each of the links/pages has a background image to show consistency throughout the web pages.
+
+### **Wireframes**
+
+Balsamiq software was used to generate the following wireframes while doing the project planning and scope plan section. 
+
+* [Home](wireframes/home.png)
+* [Contact](wireframes/contact.png)
+* [How_To_Order](wireframes/how_to_order.png)
