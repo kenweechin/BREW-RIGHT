@@ -67,3 +67,27 @@ Balsamiq software was used to generate the following wireframes while doing the 
 * [Home](wireframes/home.png)
 * [Contact](wireframes/contact.png)
 * [How_To_Order](wireframes/how_to_order.png)
+
+# **Features**
+
+Each page comprises of a responsive navigation bar at the top page. The branding of the website is situated at the top middle, whereas the navigation links are located at the top left. The home page and how to order page consists of the footer with the social media links for the user to click on to check the credit of the website, as well as the other minor section of brief introduction of the website at the most bottom page. 
+
+The navigation links consists of home page, contact page, how to order page, and cart page. 
+
+**Home** 
+
+The home page features three carousel slides as the main images of the landing page. The first slide shows the coffee beans with the stirrer, the reason of this picture is to yield a visual impact to the user which the user can know what is this website selling without spending much time on scrolling to look for information. 
+
+The brand of the website, BREW RIGHT, is created by combining wording and picture to attract audience's eyes, which acts as a great advertising title. 
+
+The navigation links are in white tone background. Their color changed when the user hovers the mouse over the navigation links so they know they are clicking on the right link. Navigation links are persistent across desktop and laptop resolution. A menu bar is shown when the screen resolution is at tablet resolution or lower. 
+
+The body content is the products that BREW RIGHT website is offering to the user. Each of the pictures stand as a individual type of coffee, with the price attaching to each pictures so the user get to know the price of each type of coffee. The images clearly represent and convey the idea of the coffee product that the user will get after ordering. All the products are clearly aligned to each other. The layout of the content of the page in tablet resolution is the same as in laptop and desktop resolution. Whereas, the layout of the content in mobile resolution is aligned vertically to avoid the content get distorted. A link right below of each products named: "Order Now" is shown so the user can order the products if they are willing to. With the products sit in the home page, user is able to purchase the products easily without navigate to other pages to look for their desire products, which in turn enhance the sales. 
+
+There is a mouseover event integrated on the "Order Now" button. Whenever the user hover their mouse over the button, the button will show a different text as in: "Great Choice!", and the button will fill up cyan color. The other interactive features are adding the products to the cart. When the user click on the "Order Now" button to purchase the speficic coffee, the cart icon on the top right of the page will show the quantity right beside it. It shows the quantity that the user has chosen.  Furthermore, everytime the button has been clicked, the windows will pop out an alert message stating: "Your choice has been added to the cart!", so the user knows the product has been added to the cart.   
+
+**How To Order** 
+
+The how to order page features a main image which shows the "ORDER" sign. This image is set at the top of the page so the user can clearly know the purpose of this page. Below the title image is the description that explain the way of ordering on the website. A **Home Page** link is placed in the text so the user can navigate to it easily for ordering the coffee products. 
+
+Three different branches of BREW RIGHT locations are shown in the google map below the page by integrating Google Map API feature. User can zoom in and zoom out the map to get the exact location of different branches if they want to do a walk in to the cafe.  
