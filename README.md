@@ -90,4 +90,4 @@ There is a mouseover event integrated on the "Order Now" button. Whenever the us
 
 The how to order page features a main image which shows the "ORDER" sign. This image is set at the top of the page so the user can clearly know the purpose of this page. Below the title image is the description that explain the way of ordering on the website. A **Home Page** link is placed in the text so the user can navigate to it easily for ordering the coffee products. 
 
-Three different branches of BREW RIGHT locations are shown in the google map below the page by integrating Google Map API feature. User can zoom in and zoom out the map to get the exact location of different branches if they want to do a walk in to the cafe.  
+Three different branches of BREW RIGHT locations are shown in the google map below the page by integrating Google Map API feature. User can zoom in and zoom out the map to get the exact location of different branches if they want to do a walk in to the cafe. 
