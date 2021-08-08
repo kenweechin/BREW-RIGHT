@@ -281,13 +281,6 @@ button, input, optgroup, select, textarea {
     color: #2D3047;
 }
 
-
-
-
-
-
-
-/** cart.html page **/
 .shopping-cart-title {
     font-family: 'playfair display', sans-serif;
     text-align: center;
@@ -316,26 +309,7 @@ button, input, optgroup, select, textarea {
     justify-content: space-around;
     font-family: 'playfair display', sans-serif;  
 }
-
  
-.items-title,
-.items-price,
-.items-quantity,
-.items-total  {
-    width: 20%;
-    display: flex;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
-
-
 /** responsiveness adjustment **/
 @media screen and (min-width: 320px) {
     .contact-background-image {
@@ -344,20 +318,6 @@ button, input, optgroup, select, textarea {
     
     .text-box {
         flex-direction: column;
-    }
-
-    div.items-container .items-header h5  {
-        font-size: 0.8rem;
-    }
-
-    .items-title, 
-    .items-price,
-    .items-quantity,
-    .items-total
-    {
-        font-size: 0.8rem;
-        font-family: 'playfair display', sans-serif;
-
     }
 }
 
@@ -386,15 +346,5 @@ button, input, optgroup, select, textarea {
 
     div.items-container .items-header h5  {
         font-size: 1.5rem;
-    }
-
-    .items-title, 
-    .items-price,
-    .items-quantity,
-    .items-total
-    {
-        font-size: 1.6rem;
-        font-family: 'playfair display', sans-serif;
-
     }
 }
