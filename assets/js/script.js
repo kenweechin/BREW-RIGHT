@@ -108,27 +108,31 @@ function cartDisplay() {
         itemsContainer.innerHTML = '';
         Object.values(cartProduct).map(product => {
             itemsContainer.innerHTML += `
+            
                 <tr> 
                     <td>${product.name}</td>
-                    <td>${product.price}</td>
+                    <td>€${product.price}</td>
                     <td><i class="fas fa-minus-square"></i>&nbsp;${product.insideCart}&nbsp;<i class="fas fa-plus-square"></i></td>
-                    <td>${product.insideCart * product.price}<i class="fas fa-trash-alt"></i></td>        
-                </tr>     
+                    <td>€${product.insideCart * product.price}<i class="fas fa-trash-alt"></i></td>        
+                </tr>  
+            
             `
         });
 
         itemsContainer.innerHTML += `
-            <tr>
-                <h5>
-                    Cart Total Amount
-                </h5>
+        <tr>
+            <p class="cartTotalTitle">
+                Total Cost  
+            </p>
+            <p class="cartTotalAmount">
+                €${productTotal}
+            </p>
+        </tr>
+    `
 
-                <h5>
-                    ${productTotal}
-                </h5>
-            </tr>
-        `
     }
+
+
 }
 
 cartDisplay();
