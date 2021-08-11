@@ -107,12 +107,12 @@ function cartDisplay() {
         itemsContainer.innerHTML = '';
         Object.values(cartProduct).map(product => {
             itemsContainer.innerHTML += `
-            <tr>
-            <td>${product.name}</td>
-            <td>${product.price}</td>
-            <td><i class="fas fa-minus-square"></i>${product.insideCart}<i class="fas fa-plus-square"></i></td>
-            <td>${product.insideCart * product.price}<i class="fas fa-trash-alt"></i></td>
-            </tr>
+                <tr> 
+                    <td>${product.name}</td>
+                    <td>${product.price}</td>
+                    <td><i class="fas fa-minus-square"></i>&nbsp;${product.insideCart}&nbsp;<i class="fas fa-plus-square"></i></td>
+                    <td>${product.insideCart * product.price}<i class="fas fa-trash-alt"></i></td>        
+                </tr>     
             `
         });
     }
