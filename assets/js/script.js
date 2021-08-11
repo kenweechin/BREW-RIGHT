@@ -103,6 +103,7 @@ function cartDisplay() {
     cartProduct = JSON.parse(cartProduct);
 
     let itemsContainer = document.querySelector(".items-added");
+    let productTotal = localStorage.getItem("costTotal", items.price);
     if (cartProduct && itemsContainer) {
         itemsContainer.innerHTML = '';
         Object.values(cartProduct).map(product => {
@@ -115,6 +116,18 @@ function cartDisplay() {
                 </tr>     
             `
         });
+
+        itemsContainer.innerHTML += `
+            <tr>
+                <h5>
+                    Cart Total Amount
+                </h5>
+
+                <h5>
+                    ${productTotal}
+                </h5>
+            </tr>
+        `
     }
 }
 
