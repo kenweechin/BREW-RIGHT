@@ -293,7 +293,7 @@ button, input, optgroup, select, textarea {
     justify-content: space-around;
     margin: 4rem auto;
 }
-
+ 
 .items-added i{
     margin-right: 0.8rem;
     margin-left: 0.8rem;
@@ -309,6 +309,11 @@ button, input, optgroup, select, textarea {
     justify-content: space-around;
     font-family: 'playfair display', sans-serif;  
 }
+
+.fa-trash-alt:before{
+    margin: 0.4rem;
+}
+
  
 /** responsiveness adjustment **/
 @media screen and (min-width: 320px) {
@@ -318,6 +323,22 @@ button, input, optgroup, select, textarea {
     
     .text-box {
         flex-direction: column;
+    }
+
+    .items-added i {
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        color: darkblue;
+        cursor: pointer;
+        font-size: 0.6rem;
+    }
+
+    td {
+        font-size: 0.9rem;
+    }
+
+    i.fas.fa-minus-square, i.fas.fa-plus-square, i.fas.fa-trash-alt {
+        display: contents;
     }
 }
 
@@ -346,5 +367,17 @@ button, input, optgroup, select, textarea {
 
     div.items-container .items-header h5  {
         font-size: 1.5rem;
+    }
+
+    .items-added i {
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+        color: darkblue;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    td {
+        font-size: 1rem;
     }
 }
