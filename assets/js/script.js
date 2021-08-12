@@ -19,22 +19,22 @@ let cart = document.querySelectorAll(".orderButton");
 
 let items = [{
         name: "FRENCH PRESS",
-        price: 7.99,
+        price: 7.00,
         insideCart: 0
     },
     {
         name: "IBRIK",
-        price: 8.99,
+        price: 8.00,
         insideCart: 0
     },
     {
         name: "MOKAPOT",
-        price: 8.99,
+        price: 8.00,
         insideCart: 0
     },
     {
         name: "POUROVER",
-        price: 5.99,
+        price: 5.00,
         insideCart: 0
     }
 ];
