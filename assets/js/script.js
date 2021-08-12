@@ -107,16 +107,14 @@ function cartDisplay() {
     if (cartProduct && itemsContainer) {
         itemsContainer.innerHTML = '';
         Object.values(cartProduct).map(product => {
-            itemsContainer.innerHTML += `
-            
+            itemsContainer.innerHTML += `  
                 <tr> 
-                    <td>${product.name}</td>
+                    <td>${product.name}<i class="fas fa-trash-alt" id="deleteBin"></i></td>
                     <td>€${product.price}</td>
                     <td><i class="fas fa-minus-square"></i>&nbsp;${product.insideCart}&nbsp;<i class="fas fa-plus-square"></i></td>
-                    <td>€${product.insideCart * product.price}<i class="fas fa-trash-alt"></i></td>        
-                </tr>  
-            
-            `
+                    <td>€${product.insideCart * product.price}</td>        
+                </tr>    
+            `;
         });
 
         itemsContainer.innerHTML += `
@@ -128,14 +126,42 @@ function cartDisplay() {
                 €${productTotal}
             </p>
         </tr>
-    `
-
+    `;
     }
-
-
+    deleteButton ();  
 }
 
 cartDisplay();
+
+function deleteButton() {
+    let deleteButton = document.querySelectorAll(".items-added #deleteBin");
+    let itemName;
+    let itemNumber = localStorage.getItem("cartQuantity");
+    let cartItem = localStorage.getItem("coffeeInCart");
+    let cartCost = localStorage.getItem("costTotal");
+
+    cartItem = JSON.parse(cartItem);
+    console.log(cartItem);
+
+    for(let i = 0; i < deleteButton.length; i++){
+        deleteButton[i].addEventListener("click", () => {
+            itemName = deleteButton[i].parentElement.textContent;
+            console.log(itemName);
+            
+            localStorage.setItem("cartQuantity", itemNumber - cartItem[itemName].insideCart);
+
+            localStorage.setItem("costTotal", cartCost - (cartItem[itemName].price *cartItem[itemName].insideCart));
+
+            delete cartItem[itemName];
+            localStorage.setItem("coffeeInCart" , JSON.stringify(cartItem));
+
+            cartDisplay();
+            loadedCart();
+        });
+    }
+}
+
+
 
 function loadedCart() {
     let cartNumber = localStorage.getItem("cartQuantity");
