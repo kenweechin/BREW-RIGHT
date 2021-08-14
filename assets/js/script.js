@@ -46,18 +46,24 @@ for (let i = 0; i < cart.length; i++) {
     });
 }
 
-function cartQuantity(items) {
+function cartQuantity(items, action) {
 
     let cartNumber = localStorage.getItem("cartQuantity");
 
     cartNumber = parseInt(cartNumber);
 
-    if (cartNumber) {
+    let cartProduct = localStorage.getItem("coffeeInCart");
+    cartProduct = JSON.parse(cartProduct);
+
+    if (action == "decrement") {
+        localStorage.setItem("cartQuantity", cartNumber - 1);
+        document.querySelector(".cart-number").textContent = cartNumber - 1;
+    } else if (cartNumber) {
         localStorage.setItem("cartQuantity", cartNumber + 1);
-        document.querySelector(".cart-number").innerHTML = cartNumber + 1;
+        document.querySelector(".cart-number").textContent = cartNumber + 1;
     } else {
         localStorage.setItem("cartQuantity", 1);
-        document.querySelector(".cart-number").innerHTML = 1;
+        document.querySelector(".cart-number").textContent = 1;
     }
 
     setCoffeeProducts(items);
@@ -87,10 +93,13 @@ function setCoffeeProducts(items) {
     localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
 }
 
-function costTotal(items) {
+function costTotal(items, action) {
     let productTotal = localStorage.getItem("costTotal", items.price);
 
-    if (productTotal !== null) {
+    if (action == "decrement") {
+        productTotal = parseInt(productTotal);
+        localStorage.setItem("costTotal", productTotal - items.price)
+    } else if (productTotal !== null) {
         productTotal = parseFloat(productTotal);
         localStorage.setItem("costTotal", +productTotal + items.price);
     } else {
@@ -109,9 +118,9 @@ function cartDisplay() {
         Object.values(cartProduct).map(product => {
             itemsContainer.innerHTML += `  
                 <tr> 
-                    <td>${product.name}<i class="fas fa-trash-alt" id="deleteBin"></i></td>
+                    <td><span>${product.name}</span><i class="fas fa-trash-alt" id="deleteBin"></i></td>
                     <td>€${product.price}</td>
-                    <td><i class="fas fa-minus-square"></i>&nbsp;${product.insideCart}&nbsp;<i class="fas fa-plus-square"></i></td>
+                    <td><i class="cartDecrement fas fa-minus-square"></i>&nbsp;<span>${product.insideCart}</span>&nbsp;<i class="cartIncrement fas fa-plus-square"></i></td>
                     <td>€${product.insideCart * product.price}</td>        
                 </tr>    
             `;
@@ -128,32 +137,30 @@ function cartDisplay() {
         </tr>
     `;
     }
-    deleteButton ();  
+    deleteButton();
+    adjustQuantity();
 }
 
-cartDisplay();
 
 function deleteButton() {
     let deleteButton = document.querySelectorAll(".items-added #deleteBin");
     let itemName;
     let itemNumber = localStorage.getItem("cartQuantity");
-    let cartItem = localStorage.getItem("coffeeInCart");
+    let cartProduct = localStorage.getItem("coffeeInCart");
     let cartCost = localStorage.getItem("costTotal");
 
-    cartItem = JSON.parse(cartItem);
-    console.log(cartItem);
+    cartProduct = JSON.parse(cartProduct);
 
-    for(let i = 0; i < deleteButton.length; i++){
+    for (let i = 0; i < deleteButton.length; i++) {
         deleteButton[i].addEventListener("click", () => {
             itemName = deleteButton[i].parentElement.textContent;
-            console.log(itemName);
-            
-            localStorage.setItem("cartQuantity", itemNumber - cartItem[itemName].insideCart);
 
-            localStorage.setItem("costTotal", cartCost - (cartItem[itemName].price *cartItem[itemName].insideCart));
+            localStorage.setItem("cartQuantity", itemNumber - cartProduct[itemName].insideCart);
 
-            delete cartItem[itemName];
-            localStorage.setItem("coffeeInCart" , JSON.stringify(cartItem));
+            localStorage.setItem("costTotal", cartCost - (cartProduct[itemName].price * cartProduct[itemName].insideCart));
+
+            delete cartProduct[itemName];
+            localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
 
             cartDisplay();
             loadedCart();
@@ -161,7 +168,43 @@ function deleteButton() {
     }
 }
 
+function adjustQuantity() {
+    let incrementButton = document.querySelectorAll(".cartIncrement");
+    let decrementButton = document.querySelectorAll(".cartDecrement");
+    let cartProduct = localStorage.getItem("coffeeInCart");
+    let currentQuantity = 0;
+    let currentItem = "";
 
+    cartProduct = JSON.parse(cartProduct);
+
+
+    for (let i = 0; i < incrementButton.length; i++) {
+        incrementButton[i].addEventListener("click", () => {
+            currentQuantity = incrementButton[i].parentElement.querySelector("span").textContent;
+            currentItem = incrementButton[i].parentElement.previousElementSibling.previousElementSibling.querySelector("span").textContent;
+            cartProduct[currentItem].insideCart += 1;
+            cartQuantity(cartProduct[currentItem]);
+            costTotal(cartProduct[currentItem]);
+            localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
+            cartDisplay();
+        });
+    }
+
+    for (let i = 0; i < decrementButton.length; i++) {
+        decrementButton[i].addEventListener("click", () => {
+            currentQuantity = decrementButton[i].parentElement.querySelector("span").textContent;
+            currentItem = decrementButton[i].parentElement.previousElementSibling.previousElementSibling.querySelector("span").textContent;
+
+            if (cartProduct[currentItem].insideCart > 1) {
+            cartProduct[currentItem].insideCart -= 1;
+            cartQuantity(cartProduct[currentItem], "decrement");
+                costTotal(cartProduct[currentItem], "decrement");
+                localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
+                cartDisplay();
+            }
+        });
+    }
+}
 
 function loadedCart() {
     let cartNumber = localStorage.getItem("cartQuantity");
@@ -171,3 +214,4 @@ function loadedCart() {
 }
 
 loadedCart();
+cartDisplay();
