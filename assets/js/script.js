@@ -49,9 +49,7 @@ for (let i = 0; i < cart.length; i++) {
 function cartQuantity(items, action) {
 
     let cartNumber = localStorage.getItem("cartQuantity");
-
     cartNumber = parseInt(cartNumber);
-
     let cartProduct = localStorage.getItem("coffeeInCart");
     cartProduct = JSON.parse(cartProduct);
 
@@ -65,13 +63,11 @@ function cartQuantity(items, action) {
         localStorage.setItem("cartQuantity", 1);
         document.querySelector(".cart-number").textContent = 1;
     }
-
     setCoffeeProducts(items);
 }
 
 function setCoffeeProducts(items) {
     let cartProduct = localStorage.getItem("coffeeInCart");
-
     cartProduct = JSON.parse(cartProduct);
 
     if (cartProduct !== null) {
@@ -84,7 +80,6 @@ function setCoffeeProducts(items) {
         cartProduct[items.name].insideCart += 1;
     } else {
         items.insideCart = 1;
-
         cartProduct = {
             [items.name]: items
         };
@@ -110,9 +105,9 @@ function costTotal(items, action) {
 function cartDisplay() {
     let cartProduct = localStorage.getItem("coffeeInCart");
     cartProduct = JSON.parse(cartProduct);
-
     let itemsContainer = document.querySelector(".items-added");
     let productTotal = localStorage.getItem("costTotal", items.price);
+
     if (cartProduct && itemsContainer) {
         itemsContainer.innerHTML = '';
         Object.values(cartProduct).map(product => {
@@ -129,7 +124,7 @@ function cartDisplay() {
         itemsContainer.innerHTML += `
         <tr>
             <p class="cartTotalTitle">
-                Total Cost  
+                Total  
             </p>
             <p class="cartTotalAmount">
                 €${productTotal}
@@ -141,27 +136,21 @@ function cartDisplay() {
     adjustQuantity();
 }
 
-
 function deleteButton() {
     let deleteButton = document.querySelectorAll(".items-added #deleteBin");
     let itemName;
     let itemNumber = localStorage.getItem("cartQuantity");
     let cartProduct = localStorage.getItem("coffeeInCart");
     let cartCost = localStorage.getItem("costTotal");
-
     cartProduct = JSON.parse(cartProduct);
 
     for (let i = 0; i < deleteButton.length; i++) {
         deleteButton[i].addEventListener("click", () => {
             itemName = deleteButton[i].parentElement.textContent;
-
             localStorage.setItem("cartQuantity", itemNumber - cartProduct[itemName].insideCart);
-
             localStorage.setItem("costTotal", cartCost - (cartProduct[itemName].price * cartProduct[itemName].insideCart));
-
             delete cartProduct[itemName];
             localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
-
             cartDisplay();
             loadedCart();
         });
@@ -174,9 +163,7 @@ function adjustQuantity() {
     let cartProduct = localStorage.getItem("coffeeInCart");
     let currentQuantity = 0;
     let currentItem = "";
-
     cartProduct = JSON.parse(cartProduct);
-
 
     for (let i = 0; i < incrementButton.length; i++) {
         incrementButton[i].addEventListener("click", () => {
@@ -196,8 +183,8 @@ function adjustQuantity() {
             currentItem = decrementButton[i].parentElement.previousElementSibling.previousElementSibling.querySelector("span").textContent;
 
             if (cartProduct[currentItem].insideCart > 1) {
-            cartProduct[currentItem].insideCart -= 1;
-            cartQuantity(cartProduct[currentItem], "decrement");
+                cartProduct[currentItem].insideCart -= 1;
+                cartQuantity(cartProduct[currentItem], "decrement");
                 costTotal(cartProduct[currentItem], "decrement");
                 localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
                 cartDisplay();
