@@ -315,7 +315,8 @@ button, input, optgroup, select, textarea {
 }
 
 .cartTotalTitle, .cartTotalAmount {
-    font-family: "sans-serif";  
+    font-family: "sans-serif"; 
+    margin-left: 0.8rem; 
 }
 
 /** responsiveness adjustment **/
@@ -346,8 +347,12 @@ button, input, optgroup, select, textarea {
 
     .cartTotalTitle, .cartTotalAmount {
         display: inline-block;
-        margin: 0.5rem;
-}
+        font-weight: bold;
+    }
+
+    .contact-title-text .submit-btn {
+        margin-right: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -387,5 +392,11 @@ button, input, optgroup, select, textarea {
 
     td {
         font-size: 1rem;
+    }
+
+    .items-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        /* display: flex; */
     }
 }
