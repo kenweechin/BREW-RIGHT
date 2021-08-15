@@ -1,5 +1,5 @@
 //to prevent the submit to be executed before the input to the form 
-document.getElementByID("submitButton").addEventListener("submit", function(event){
+document.getElementById("submitButton").addEventListener("submit", function(event){
     event.preventDefault();
 });
 
