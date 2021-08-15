@@ -48,12 +48,14 @@ a.nav-link {
 .carousel-caption>h1 {
     font-size: 0.85rem;
     font-family: 'playfair display', sans-serif;
+    font-weight: bold;
 }
 
 .carousel-caption>p {
     font-size: 0.65rem;
     font-family: 'playfair display', sans-serif;
     font-style: italic;
+    font-weight: bold;
 }
 
 /** middle section of the index.html page **/
@@ -62,6 +64,7 @@ a.nav-link {
     text-align: center;
     font-size: 1.15rem;
     margin-top: 1.5rem;
+    font-weight: bold;
 }
 
 .container-card-title-first,
@@ -79,7 +82,8 @@ a.nav-link {
 }
 
 .center-text-coffee-one,
-.center-text-coffee-two {
+.center-text-coffee-two,
+.center-text-coffee-four {
     position: absolute;
     top: 20%;
     left: 50%;
@@ -101,23 +105,11 @@ a.nav-link {
     font-weight: bold;
 }
 
-.center-text-coffee-four {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #c1c7c9;
-    font-family: 'playfair display', sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
 .coffee-price{
     color:#2B2D42;
     font-family: 'playfair display', sans-serif;
     font-weight: bold;
 }
-
 
 /** auto resize the image to fit the container in different screen sizes**/
 .container-card-title {
@@ -149,7 +141,6 @@ a.nav-link {
     background-size: cover;
     top: 50%;
     left: 50%;
-
 }
 
 div#map {
@@ -368,10 +359,12 @@ button, input, optgroup, select, textarea {
         font-size: 3rem;
         font-family: 'playfair display', sans-serif;
         color: #F1FAEE;
+        font-weight: bold;
     }
 
     .carousel-caption>p {
         font-size: 1rem;
+        font-weight: bold;
     }
 
     .contact-info {
