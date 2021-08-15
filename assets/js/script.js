@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 //Mouseover event for the Order Now button in the home page
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByClassName("orderButton");
@@ -93,7 +94,7 @@ function costTotal(items, action) {
 
     if (action == "decrement") {
         productTotal = parseInt(productTotal);
-        localStorage.setItem("costTotal", productTotal - items.price)
+        localStorage.setItem("costTotal", productTotal - items.price);
     } else if (productTotal !== null) {
         productTotal = parseFloat(productTotal);
         localStorage.setItem("costTotal", +productTotal + items.price);

@@ -1,6 +1,6 @@
+/*jshint esversion: 6 */
 //rendering the map to the page
 //code is derived and edited from google maps platform
-
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 11,
