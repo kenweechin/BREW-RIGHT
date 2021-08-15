@@ -17,10 +17,12 @@ The website consists of:
 * The preferred item/items can be added to the cart by one click where the click button is situated right under the item so there is no confusion between the prices and items. 
 * Fascinating pictures of the products and the products are aligned in a user-friendly manner. 
 * The reasons for choosing Brew Right coffee are clearly shown on the home page.
-* The availabiliy to add the desire coffee choices to the cart 
-* The details of the coffee shop can be found easily. 
-* The brief introduction of the website at the footer section in the home page and showing of social links.
+* The availabiliy to add the desire coffee choices to the cart. 
+* The details of the coffee shop, including locations, email address, operation hours, and contact number can be found easily via navigation link at the top of the web page.
+* The brief introduction of the website at the footer section in the home page and how to order page, as well as showing the social links.
 * The reasons for choosing Brew Right Coffee are shown in the home page.
+* Interactive features of adding, decreasing, and removing the products chosen in a specific cart page. 
+* The total cost of chosen products is shown and will change as the quantity of the products changed. 
 
 
 ### **Developer goals**
@@ -38,7 +40,9 @@ The website consists of:
   7. I want an easy way to contact the coffee shop where the details are easily visualized on the page. Furthermore, I am able to write my queries and send them via email, subsequently they can reply to my email. 
   8. I want the easy and convenient way to add the product that I am desire to order by clicking on the order button. 
   9.  I want to see the quantity that I have ordered on the cart icon on the top page of the website. 
-  10. I want to see the list of the products ordered when clicking on the cart icon, which will navigate to a new page, and shows the total price of the products ordered. 
+  10. I want to see the list of the products ordered when clicking on the cart icon, which will navigate to a cart page, and shows the total price of the products ordered. 
+  11. I want the add quantity, decrease quantity, and remove features of the products showing in the cart page if I decided to change the quantity or want to get rid off a particular product.
+  12. I want to know the total amount of the products that I have ordered. 
 
 ### **Design Choices**
 ![Responsive Mockup](wireframes/mockup.png)
@@ -49,7 +53,7 @@ The website consists of:
     * The background on the contact page is using a white tone image with a cup of coffee placing on a table. The purpose of this is to create a relaxing ambience for the user.
     * The landing page image on the how to order page is using a significant ORDER sign board to show the purpose of the page to the user.
 * Color Scheme
-    * The main colors of the website (except the images) used are generally in white tone. This is because all the images used on the website are generally in an earthy tone, since the products are coffee based. Hence, the colors of the images themselves are sufficient to yield colors that able to enrich the website. 
+    * The main colors of the website (except the images) used are generally in white tone. This is because all the images used on the website are generally in an earthy tone since the products are coffee based. Hence, the colors of the images themselves are sufficient to yield colors that able to enrich the website. 
     * The main home navigation link, which situated at the top middle of all pages, name: BREW RIGHT, is colored in dark purple, to make the website's brand stand out from the others navigation link.
     * Dark green is used for the top page of navigation links when the user hovers over the links to present a great contrast to the white tone background. 
     * The navigation links are showing a light green color when the user is on that particular page, to present which page the user is currently on. 
@@ -57,7 +61,7 @@ The website consists of:
     * Playfair Display font is the main font used throughout the website pages with Sans Serif as the fallback font. 
     * Playfair Display font looks elegant either as a title or the content on a website. It tends to yield a trustable emotion to the user as well which is a vital element for a website business. 
 * Styling
-    * Each of the links/pages has the same navigation menu so the user can direct to the other main navigation sites when they are browsing particular links.
+    * Each of the links/pages has the same navigation menu so the user can direct to the other navigation sites when they are browsing particular links.
     * Each of the links/pages has a background image to show consistency throughout the web pages.
 
 ### **Wireframes**
@@ -67,6 +71,7 @@ Balsamiq software was used to generate the following wireframes while doing the 
 * [Home](wireframes/home.png)
 * [Contact](wireframes/contact.png)
 * [How_To_Order](wireframes/how_to_order.png)
+* [Cart](wireframes/cart.png)
 
 # **Features**
 
