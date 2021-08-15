@@ -125,7 +125,7 @@ a.nav-link {
     height: 9rem;
 }
 
-/** how_to_order.html page**/
+/******************* how_to_order.html page *******************/
 .how-to-order-title {
     font-family: 'playfair display', sans-serif;
     text-align: center;
@@ -157,7 +157,7 @@ div#map {
     width: 100%;
 }
 
-/** contact.html page*/
+/******************* contact.html page *******************/
 /** Part of the css code for the contact page are derived and edited from "CodingSnow" channel on Youtube platfrom**/
 .contact-background-image {
     background: url("../images/landing.jpg")no-repeat center;
@@ -244,7 +244,7 @@ button, input, optgroup, select, textarea {
     background-color: #6D213C;
 }
 
-/** footer section**/
+/******************* footer section for index.html and how_to_order.html *******************/
 .social-media-title,
 .about-brewright {
     font-family: 'playfair display', sans-serif;
@@ -276,7 +276,7 @@ button, input, optgroup, select, textarea {
     padding: 0;
 }
 
-/** cart section of all the cart.html page **/
+/******************* cart.html page ********************/
 .fa-cart-arrow-down:before, .cart-number {
     color: #2D3047;
 }
@@ -319,7 +319,7 @@ button, input, optgroup, select, textarea {
     margin-left: 0.8rem; 
 }
 
-/** responsiveness adjustment **/
+/******************* screen responsiveness adjustment ********************/
 @media screen and (min-width: 320px) {
     .contact-background-image {
         background-position: 20% 50%;
@@ -397,6 +397,5 @@ button, input, optgroup, select, textarea {
     .items-container {
         padding-left: 5rem;
         padding-right: 5rem;
-        /* display: flex; */
     }
 }
