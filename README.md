@@ -96,3 +96,23 @@ There is a mouseover event integrated on the "Order Now" button. Whenever the us
 The how to order page features a main image which shows the "ORDER" sign. This image is set at the top of the page so the user can clearly know the purpose of this page. Below the title image is the description that explain the way of ordering on the website. A **Home Page** link is placed in the text so the user can navigate to it easily for ordering the coffee products. 
 
 Three different branches of BREW RIGHT locations are shown in the google map below the page by integrating Google Map API feature. User can zoom in and zoom out the map to get the exact location of different branches if they want to do a walk in to the cafe. 
+
+**Contact**
+
+The contact page features a contact form that giving the option for the users to submit their special request if they are any. The users are able to key in their name, email address, and their message. Once the users submit the request by clicking on the submit button named **SUBMIT YOUR REQUEST** right below the contact form, BREW RIGHT owner will receive the details of the user and their message through email platform. The page also shows the contact detail of BREW RIGHT, including email address, contact number, main shop address, and opening hours. These details give accessiblity for the user to reach BREW RIGHT in an easier way.
+
+**Cart**
+
+The cart page show users the item/items they have chosen.  The properties include:
+1. Item
+2. Price
+3. Quantity 
+4. Total Price
+
+These properties are aligned horizontally which stand as the header. Once the user has chosen an item on the home page, the properties of the item will show in this cart page which appear in table form. The user can interact with the buttons. These buttons are the *Trash Bin*, *Minus*, and *Add*.
+
+*Trash Bin*: Delete the entire item and it's properties.
+*Minus*: Reduce the quantity of a particular chosen item in the cart.
+*Add*: Add the quantity of a particular chosen item in the cart.
+
+There is a **Total** amount shows below the chosen item, which shows the total cost of the item the users' cart. Whenever the user add, decrease, or remove the item, the total amount will calculate to the correct final total value. 
