@@ -46,19 +46,6 @@ a.nav-link {
     padding-left: 1rem;
 }
 
-.carousel-caption>h1 {
-    font-size: 0.85rem;
-    font-family: 'playfair display', sans-serif;
-    font-weight: bold;
-}
-
-.carousel-caption>p {
-    font-size: 0.65rem;
-    font-family: 'playfair display', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-}
-
 /** middle section of the index.html page **/
 .coffee-variety-title {
     font-family: 'playfair display', sans-serif;
@@ -91,8 +78,8 @@ a.nav-link {
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-family: 'playfair display', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1rem;
+  
 }
 
 .center-text-coffee-three {
@@ -102,8 +89,8 @@ a.nav-link {
     transform: translate(-50%, -50%);
     color: #093145;
     font-family: 'playfair display', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1rem;
+  
 }
 
 .coffee-price{
@@ -345,6 +332,13 @@ button, input, optgroup, select, textarea {
     .contact-title-text .submit-btn {
         margin-right: 2.5rem;
     }
+
+    .carousel-caption>h1 {
+        font-size: 1.5rem;
+        font-family: 'sans-serif';
+        color: #F1FAEE;
+        margin-bottom: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -360,11 +354,6 @@ button, input, optgroup, select, textarea {
         font-size: 3rem;
         font-family: 'playfair display', sans-serif;
         color: #F1FAEE;
-        font-weight: bold;
-    }
-
-    .carousel-caption>p {
-        font-size: 1rem;
         font-weight: bold;
     }
 
