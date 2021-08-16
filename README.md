@@ -48,7 +48,7 @@ The website consists of:
 ![Responsive Mockup](wireframes/mockup.png)
 
 * Imagery 
-    * The background image on the home page is using the image full of coffee beans with a stirrer. This is to demonstrate the main purpose of the website, which act as a representative element of the website is focusing on. This is to attract user's attention and yield a trust emotion toward the quality of the beans that the website is offering to the user. 
+    * The background image on the home page is using the image with contents of coffee ground powder, coffee beans, coffee cups and poltafilter . This is to demonstrate the main purpose of the website, which act as a representative element of the website is focusing on. This is to attract user's attention and yield a trust emotion toward the quality of the beans that the website is offering to the user. 
     * The product images on the home page are the exact coffee brewing types. Hence, the user would have an idea of the coffee brewing mechanism that they are going to order. Each of the products' images have the name labelled thus the user will get to know the types of the brewing coffee. 
     * The background on the contact page is using a white tone image with a cup of coffee placing on a table. The purpose of this is to create a relaxing ambience for the user.
     * The landing page image on the how to order page is using a significant ORDER sign board to show the purpose of the page to the user.
@@ -77,11 +77,11 @@ Balsamiq software was used to generate the following wireframes while doing the 
 
 Each page comprises of a responsive navigation bar at the top page. The branding of the website is situated at the top middle, whereas the navigation links are located at the top left. The home page and how to order page consists of the footer with the social media links for the user to click on to check the credit of the website, as well as the other minor section of brief introduction of the website at the most bottom page. 
 
-The navigation links consists of home page, contact page, how to order page, and cart page. 
+The navigation links consists of home page(represented by the BREW RIGHT logo), contact page, how to order page, and cart page. 
 
 **Home** 
 
-The home page features three carousel slides as the main images of the landing page. The first slide shows the coffee beans with the stirrer, the reason of this picture is to yield a visual impact to the user which the user can know what is this website selling without spending much time on scrolling to look for information. 
+The home page features a main image of the landing page. The reason of this picture is to yield a visual impact to the user which the user can know what is this website selling without spending much time on scrolling to look for information. 
 
 The brand of the website, BREW RIGHT, is created by combining wording and picture to attract audience's eyes, which acts as a great advertising title. 
 
