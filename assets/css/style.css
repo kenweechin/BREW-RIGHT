@@ -2,6 +2,7 @@
 
 .navbar-brand img {
     width: 10rem;
+    height: 3rem;
 }
 
 .navbar-brand {
@@ -89,7 +90,7 @@ a.nav-link {
     transform: translate(-50%, -50%);
     color: #093145;
     font-family: 'playfair display', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
   
 }
 
@@ -304,6 +305,11 @@ button, input, optgroup, select, textarea {
         background-position: 20% 50%;
     }
     
+    .navbar-brand img {
+        width: 10rem;
+        height: 2rem;
+    }
+
     .text-box {
         flex-direction: column;
     }
@@ -344,6 +350,7 @@ button, input, optgroup, select, textarea {
 @media screen and (min-width: 768px) {
     .navbar-brand img {
         width: 18rem;
+        height: 3rem;
     }
 
     .container-contactDetail {
