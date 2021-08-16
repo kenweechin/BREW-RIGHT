@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display&display=swap');
-
+/* 
 .navbar-brand img {
-    width: 10rem;
+    width: 15rem;
     height: 3rem;
-}
+} */
 
 .navbar-brand {
     position: absolute;
@@ -304,9 +304,9 @@ button, input, optgroup, select, textarea {
     .contact-background-image {
         background-position: 20% 50%;
     }
-    
+
     .navbar-brand img {
-        width: 10rem;
+        width: 9rem;
         height: 2rem;
     }
 
