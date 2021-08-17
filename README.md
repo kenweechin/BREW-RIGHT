@@ -151,3 +151,29 @@ There is a **Total** amount shows below the chosen item, which shows the total c
 * [jQuery](https://jquery.com/) - For responsive navbar. 
 * [Popper.js](https://popper.js.org/) - For responsive navbar. 
 
+# **Deployment**
+This project is developed using [Gitpod](https://www.gitpod.io/), committed to git, and pushed to [GitHub](https://github.com/) via the build-in function in gitpod. The detailed steps are stated as below:
+1. Git add filename - This command was used to add selected files to the staging area before committing. 
+2. Git commit -m *commit message stating the updates* - This command was used to commit changes to the local repository. 
+3. Git push - This command is used to push all committed changes to Github repository and all the files are safe.  
+
+The steps to deploy the page to Github Pages from its GitHub repository are shown as below:
+1. Log in to Github.
+2. Choose **kenweechin/BREW-RIGHT** from the list of repository.
+3. Click on **Setting** on the right of the menu section near the top page.
+4. Navigate to the **Pages** in the left sidebar and click on it.
+5. Under **GitHub Pages**, use the **Branch** dropdown menu, then select Main Branch. 
+6. Click on **Save** button on the right, and the website is now deployed. 
+
+### **The methods to run this project locally**
+1. Follow this [link](https://github.com/) to create an account if you don't have one yet. 
+2. Make sure to use Chrome browser when you are working on Github and Gitpod.
+3. Subsequently, install the [Gitpod Browser Extension](https://www.gitpod.io/docs/browser-extension/) and restart the Chrome browser after that. 
+4. Once the installation is done, log in to your [Gitpod](https://www.gitpod.io/) and navigate to (Project Github Repository){https://github.com/kenweechin/BREW-RIGHT}.
+5. Click on the *green* colour "Gitpod" button located near the top right of the page. This will create a new gitpod workspace generated from github, and you are free to work on it locally.
+
+### **Cloning a repository to Github Desktop**
+1. Navigate to the main page of the repository on Github. 
+2. Click on the "Code" drop down button.
+3. Click "Open with Github Dekstop" to clone and open the repository with Github Desktop. 
+4. Follow the prompts in Github Dekstop to finish the clone. 
