@@ -116,3 +116,38 @@ These properties are aligned horizontally which stand as the header. Once the us
 *Add*: Add the quantity of a particular chosen item in the cart.
 
 There is a **Total** amount shows below the chosen item, which shows the total cost of the item the users' cart. Whenever the user add, decrease, or remove the item, the total amount will calculate to the correct final total value. 
+
+### **Existing Features**
+
+* Header Brand - Appears on every page. It allows the users to spot it easily since it is placed at the top middle of the webpage.
+* Header Navigation Bar - Appears on every page. It allows the users to navigate to different web pages and access their contents. 
+* Hover: 
+    1. Appears on the navigation bar. The style of each link changes upon the user's mouse pointer interaction when they hover their cursor over it or clicking it. 
+    2. Appears on the order button in the middle of the home page for each products. The text will change from *Order Now* to *Great Choice!* and the box will fill with *cyan* colors.
+* Cart icon quantity - Appears on every web pages. The initial of the cart icon quantity is showing *0* 
+    before the the users click on the order button. Once the users have clicked on the order button, the cart 
+    quantity will add up and show the current cart quantity. This features aim to give a sense to the users
+    if they have ordered the desire quantities. The cart quantity will be consistent across different web pages.
+* Alert window - Appears on the home page and contact page. On the home page, the alert window will pop out the message stating *Your choice has been added to the cart!* once the users have clicked on the order button of the product. This feature is to convey the message to the users that the item clicked has been added to their cart. On the contact page, once the users have typed in their name, email address, text of request, and clicking on the submit button, the alert window will pop out the message stating *You had submitted your request. We will get back to you soon!"*.
+* Google map - Appears on the how to order page. This features show the three branches location of the BREW RIGHT coffee shop with three pin points.
+* Add, reduce, remove of product - Appears on the cart page. This features allow the users to adjust the quantity, or remove the chosen product if they change their mind. Users are able to interact with those buttons. 
+* Footer Social Icons - Appears on home page and how to order page. It allows the users to browse the social media platfor that BREW RIGHT uses. 
+* Contact Info - Appears on contact page. It allows the users to reach BREW RIGHT via calling, email, or walk-in to the coffee shop. (!set as link for number and email!) 
+
+* [Contact Page](https.) - Allow users to know the contact details and submit their special request.
+* [How To Order Page](https.) - Allow users to know how to order the coffee either via website or walk-in by showing a thorough description of text and google map locations.
+* [Cart Page](https.) - Allow users to adjust the chosen product quantity and know the total amount. 
+
+### **Features left to implement**
+* Subscriber opt-in pop-up screen - Allow all new users to have an option to sign up for the email newsletter to receive any announcement from BREW RIGHT.
+* Payment option - Allows users to choose the online payment. 
+* Feedback pop up form - Use to capture insights of the user experience.
+
+# **Technologies Used**
+* HTML, CSS, and javascript programming languages are used in this project.
+* The developer uses [Gitpod](https://www.gitpod.io/) for their integrated development environment (IDE) which can be launched from [Github](https://github.com/) to build the website.
+* [BoostrapCDN](https://www.bootstrapcdn.com/) - Used to provide website's structure and makes the website to be responsive across different screen resolution. Furthermore, it provides icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/).
+* [Google Fonts](https://fonts.google.com/) - *Roboto* and *Oswald* font family were imported to style the website fonts.
+* [jQuery](https://jquery.com/) - For responsive navbar. 
+* [Popper.js](https://popper.js.org/) - For responsive navbar. 
+
