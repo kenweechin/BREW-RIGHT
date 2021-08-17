@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Carts section
+/*Declare variable and select all .orderButton class*/ 
 let cart = document.querySelectorAll(".orderButton");
 
+/**/ 
 let items = [{
         name: "FRENCH PRESS",
         price: 7.00,
@@ -40,6 +42,7 @@ let items = [{
     }
 ];
 
+/*For loop to loop through all cartQuantity and costTotal of the items values*/ 
 for (let i = 0; i < cart.length; i++) {
     cart[i].addEventListener("click", function () {
         cartQuantity(items[i]);
@@ -47,6 +50,7 @@ for (let i = 0; i < cart.length; i++) {
     });
 }
 
+/*This function yield features of adding and decreasing the cart quantity*/ 
 function cartQuantity(items, action) {
 
     let cartNumber = localStorage.getItem("cartQuantity");
@@ -67,6 +71,8 @@ function cartQuantity(items, action) {
     setCoffeeProducts(items);
 }
 
+/*This function yield features of updating the cart quantity which situated beside the shopping cart icon at the top right of all the pages*/ 
+/*The cart quantity will have an increment of one as the order button has been clicked once.*/ 
 function setCoffeeProducts(items) {
     let cartProduct = localStorage.getItem("coffeeInCart");
     cartProduct = JSON.parse(cartProduct);
@@ -89,6 +95,7 @@ function setCoffeeProducts(items) {
     localStorage.setItem("coffeeInCart", JSON.stringify(cartProduct));
 }
 
+/*This function yield features of updating the total cost of selected products*/ 
 function costTotal(items, action) {
     let productTotal = localStorage.getItem("costTotal", items.price);
 
@@ -103,6 +110,7 @@ function costTotal(items, action) {
     }
 }
 
+/*This function display the products chosen in a table form in the cart page*/ 
 function cartDisplay() {
     let cartProduct = localStorage.getItem("coffeeInCart");
     cartProduct = JSON.parse(cartProduct);
@@ -137,6 +145,7 @@ function cartDisplay() {
     adjustQuantity();
 }
 
+/*This function yield features of removing the products from the table in the cart page*/ 
 function deleteButton() {
     let deleteButton = document.querySelectorAll(".items-added #deleteBin");
     let itemName;
@@ -158,6 +167,8 @@ function deleteButton() {
     }
 }
 
+/*This function yield features of increasing and decreasing the quantity of the chosen products*/ 
+/*The total cost will change subject to the change of the quantity*/ 
 function adjustQuantity() {
     let incrementButton = document.querySelectorAll(".cartIncrement");
     let decrementButton = document.querySelectorAll(".cartDecrement");
@@ -194,6 +205,8 @@ function adjustQuantity() {
     }
 }
 
+/*This function sets the cart quantity to hold the value*/
+/*The refresh and navigation to other page would not change the cart quantity*/  
 function loadedCart() {
     let cartNumber = localStorage.getItem("cartQuantity");
 
