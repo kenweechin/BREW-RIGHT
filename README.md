@@ -147,7 +147,7 @@ There is a **Total** amount shows below the chosen item, which shows the total c
 * HTML, CSS, and javascript programming languages are used in this project.
 * The developer uses [Gitpod](https://www.gitpod.io/) for their integrated development environment (IDE) which can be launched from [Github](https://github.com/) to build the website.
 * [BoostrapCDN](https://www.bootstrapcdn.com/) - Used to provide website's structure and makes the website to be responsive across different screen resolution. Furthermore, it provides icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/).
-* [Google Fonts](https://fonts.google.com/) - *Roboto* and *Oswald* font family were imported to style the website fonts.
+* [Google Fonts](https://fonts.google.com/) - *Playfair Display* font family were imported to style the website fonts.
 * [jQuery](https://jquery.com/) - For responsive navbar. 
 * [Popper.js](https://popper.js.org/) - For responsive navbar. 
 
