@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display&display=swap');
-/* 
-.navbar-brand img {
-    width: 15rem;
-    height: 3rem;
-} */
-
 .navbar-brand {
     position: absolute;
     left: 50%;
