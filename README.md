@@ -177,3 +177,21 @@ The steps to deploy the page to Github Pages from its GitHub repository are show
 2. Click on the "Code" drop down button.
 3. Click "Open with Github Dekstop" to clone and open the repository with Github Desktop. 
 4. Follow the prompts in Github Dekstop to finish the clone. 
+
+# **Credits**
+
+### **Content**
+* The text of the *About Us* section on the home page and how to order page was taken and edited from [theBrandyBoy](https://thebrandboy.com/). 
+* The styling of the contact page was taken and edited from [CodingSnow](https://www.youtube.com/c/CodingSnow) channel.
+
+### **Media**
+* The photos used in this project were taken from [Unsplash](https://unsplash.com/), the internet’s source of freely-usable images.
+
+### **Code**
+* The google map feature on how to order page is derived and edited from google maps platform. 
+
+* Part of the cart interaction features concept is derived and edited from [TelmoSampaio](https://www.youtube.com/channel/UCADAkBGiLWIPkCu8D1R1M6g).
+
+### **Acknowledgement**
+* I have the inspiration of creating this project from my passion toward coffee. I am keen in different types of coffee brewing types. 
+* Special thanks to my mentor, Mr Spencer for valuable suggestions on the project and the way to improve them. 
