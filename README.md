@@ -131,9 +131,9 @@ There is a **Total** amount shows below the chosen item, which shows the total c
 * Footer Social Icons - Appears on the home page and how to order page. It allows the users to browse the social media platform that BREW RIGHT uses. 
 * Contact Info - Appears on the contact page. It allows the users to reach BREW RIGHT via call, email, or walk-in to the coffee shop. (!set as link for number and email!) 
 
-* [Contact Page](https.) - Allow users to know the contact details and submit their special request.
-* [How To Order Page](https.) - Allow users to know how to order the coffee either via website or walk-in by showing a thorough description of text and google map locations.
-* [Cart Page](https.) - Allow users to adjust the chosen product quantity and know the total amount. 
+* [Contact Page](https://github.com/kenweechin/BREW-RIGHT/blob/main/contact.html) - Allow users to know the contact details and submit their special request.
+* [How To Order Page](https://github.com/kenweechin/BREW-RIGHT/blob/main/how_to_order.html) - Allow users to know how to order the coffee either via website or walk-in by showing a thorough description of text and google map locations.
+* [Cart Page](https://github.com/kenweechin/BREW-RIGHT/blob/main/cart.html) - Allow users to adjust the chosen product quantity and know the total amount. 
 
 ### **Features left to implement**
 * Subscriber opt-in pop-up screen - Allow all new users to have an option to sign up for the email newsletter to receive any announcement from BREW RIGHT.
