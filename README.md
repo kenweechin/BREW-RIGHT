@@ -148,6 +148,9 @@ There is a **Total** amount shows below the chosen item, which shows the total c
 * [jQuery](https://jquery.com/) - For responsive navbar. 
 * [Popper.js](https://popper.js.org/) - For responsive navbar. 
 
+# **Testing**
+Testing documentation is created in [TESTING.md file](https://github.com/kenweechin/BREW-RIGHT/blob/main/TESTING.md)
+
 # **Deployment**
 This project is developed using [Gitpod](https://www.gitpod.io/), committed to git, and pushed to [GitHub](https://github.com/) via the build-in function in gitpod. The detailed steps are stated as below:
 1. Git add filename - This command was used to add selected files to the staging area before committing. 
