@@ -169,7 +169,7 @@ The steps to deploy the page to Github Pages from its GitHub repository are show
 1. Follow this [link](https://github.com/) to create an account if you don't have one yet. 
 2. Make sure to use the Chrome browser when you are working on Github and Gitpod.
 3. Subsequently, install the [Gitpod Browser Extension](https://www.gitpod.io/docs/browser-extension/) and restart the Chrome browser after that. 
-4. Once the installation is done, log in to your [Gitpod](https://www.gitpod.io/) and navigate to (Project Github Repository){https://github.com/kenweechin/BREW-RIGHT}.
+4. Once the installation is done, log in to your [Gitpod](https://www.gitpod.io/) and navigate to (Project Github Repository)(https://github.com/kenweechin/BREW-RIGHT).
 5. Click on the *green* colour "Gitpod" button located near the top right of the page. This will create a new gitpod workspace generated from github, and you are free to work on it locally.
 
 ### **Cloning a repository to Github Desktop**
