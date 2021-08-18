@@ -165,15 +165,23 @@
         * Verify the shopping cart quantity remains the same as to the home page, contact page, and how to order page. 
 
 ### **Bug/Fixes** 
-* There was an error showing in the console section in Chrome Dev Tools as shown in the  image below:
+1. An error showing in the console section in Chrome Dev Tools as shown in the image below:
 
 ![Dev Tools Error](assets/images/devtools-console-error.png)
-
 * These errors were solved by ticking the "Selected Context Only" option in Developer tools setting, under console section. Those errors were hidden as shown in the image below:
 
 ![Error Removal](assets/images/error-removal.png)
     
+
+2. An error showing in the console section in Chrome Dev Tools as shown in the image below:
+
+![Uncaught Type Error](assets/images/uncaught-typeError.png)
+* These errors were solved by updating the version of Jquery, Popper, and Boostrap, and their script order. Those errors were hidden as shown in the image below:
+
+![Error Removal](assets/images/error-removal.png)
     
+
+
 
 
 
