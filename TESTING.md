@@ -163,7 +163,15 @@
     
     4. Cart Quantity:
         * Verify the shopping cart quantity remains the same as to the home page, contact page, and how to order page. 
-    
+
+### **Bug/Fixes** 
+* There was an error showing in the console section in Chrome Dev Tools as shown in the  image below:
+
+![Dev Tools Error](assets/images/devtools-console-error.png)
+
+* These errors were solved by ticking the "Selected Context Only" option in Developer tools setting, under console section. Those errors were hidden as shown in the image below:
+
+![Error Removal](assets/images/error-removal.png)
     
     
 
