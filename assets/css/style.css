@@ -167,6 +167,10 @@ button, input, optgroup, select, textarea {
     flex: 1;
 }
 
+div.contact-info {
+    font-weight: bold;
+}
+
 .contact-title-text h2{
     text-align: center;
     margin-top: 3rem;
