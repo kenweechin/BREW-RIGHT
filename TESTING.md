@@ -12,6 +12,16 @@
 
 ![Broken Link Testing Result](assets/images/broken-link-checker.png)
 
+
+* The following images are the lighthouse testing score for all the html pages.
+
+![Index.html](assets/images/lighthouse_index-page.png)
+![How To Order.html](assets/images/lighthouse_how.to.order-page.png)
+![Contact.html](assets/images/lighthouse_contact-page.png)
+![Cart.html](assets/images/lighthouse_cart-page.png)
+
+
+
 ### **Client Stories Testing Section.**
 
 * The pathway across the website is shown as below: 
