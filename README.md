@@ -2,7 +2,7 @@
 The primary goal of Brew Right online coffee shop is to offer an ordering platform for coffee lovers - the target audiences. The main idea of this website is to offer a convenient way for the customer to order coffee and provided delivery services straight to the doorstep of the customer's location. 
 
 The website consists of:
-* Home Page: Offering options of the coffee varieties offered and their respective price lists.
+* Home Page: Offering options of the coffee varieties offered, their respective price lists, and interactive features to add them to the cart. 
 * Order Page: Providing online ordering method and three different branches locations.
 * Contact Page: Details of the coffee shop and input from the users for their email address, name, and a text box for their inquiries.
 * Cart Page: Showing the item that the user has selected, where they can add or reduce the ordered quantity.
@@ -27,12 +27,13 @@ The website consists of:
 
 ### **Developer goals**
 * Well-structured content created from programming that provides a user-friendly webpage of Brew Right Coffee Shop.
-* A junior developer using HTML, CSS, and Javascript to showcase the coding skill and as the second portfolio.
+* A junior developer using HTML, CSS, Javascript, and Google Map API to showcase the coding skill and as the second portfolio.
 
 
 ### **User Stories**
   1. I want to know the main content and the purpose of the site is trying to show.
   2. I want to know the coffee choices offered which can be seen easily without sliding or scrolling deep down the website. 
+  3. I want to know the speciality of the services I can get even though if I am not a coffee lovers.
   3. I want to easily see the price of each type of coffee offered where the products and their respective prices are aligned properly. 
   4. I want to know the speciality of the coffee offered and the delivery method.
   5. I want to locate the different branches of the coffee shops to check the closest location to my place just if I do a walk-in order. 
@@ -190,7 +191,7 @@ The steps to deploy the page to Github Pages from its GitHub repository are show
 ### **Code**
 * The google Maps feature on how to order page is derived and edited from the google maps platform. 
 
-* Part of the cart interaction features concept is derived and edited from [TelmoSampaio](https://www.youtube.com/channel/UCADAkBGiLWIPkCu8D1R1M6g).
+*The local storage property which used to store key-value pairs in a web-browser in script.js is derived from [TelmoSampaio](https://www.youtube.com/channel/UCADAkBGiLWIPkCu8D1R1M6g).
 
 ### **Acknowledgement**
 * I have the inspiration of creating this project from my passion for coffee. I am keen on different types of coffee brewing types. 
