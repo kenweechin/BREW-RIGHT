@@ -117,6 +117,10 @@ These properties are aligned horizontally which stand as the header. Once the us
 
 There is a **Total** amount shows below the chosen item, which shows the total cost of the item in the users' cart. Whenever the user adds, decrease, or remove the item, the total amount will calculate to the correct final total value. 
 
+**404 Page**
+
+The 404 page is created if there is a non-existent page or resource, user can redirect back to the home page/index.html by clicking on the link provided on the page.
+
 ### **Existing Features**
 
 * Header Brand - Appears on every page. It allows the users to spot it easily since it is placed at the top middle of the webpage.
