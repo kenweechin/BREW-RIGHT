@@ -297,6 +297,13 @@ div.contact-info {
     margin-left: 0.8rem; 
 }
 
+/******************* 404 page  ********************/
+#pageError {
+    font-weight:900;
+    font-size: 10rem;
+    text-align:center;
+}
+
 /******************* screen responsiveness adjustment ********************/
 @media screen and (min-width: 320px) {
     .contact-background-image {
