@@ -181,6 +181,9 @@ The steps to deploy the page to Github Pages from its GitHub repository are show
 
 # **Credits**
 
+### **Website**
+* The general concept and idea were inspired by [Origo Coffee](https://origocoffee.ro/).
+
 ### **Content**
 * The text of the *About Us* section on the home page and how to order page was taken and edited from [theBrandyBoy](https://thebrandboy.com/). 
 * The styling of the contact page was taken and edited from [CodingSnow](https://www.youtube.com/c/CodingSnow) channel.
@@ -190,8 +193,10 @@ The steps to deploy the page to Github Pages from its GitHub repository are show
 
 ### **Code**
 * The google Maps feature on how to order page is derived and edited from the google maps platform. 
+* The local storage property which used to store key-value pairs in a web-browser, setCoffeeProducts function and cartDisplay function in script.js are derived from [TelmoSampaio](https://www.youtube.com/channel/UCADAkBGiLWIPkCu8D1R1M6g).
 
-*The local storage property which used to store key-value pairs in a web-browser in script.js is derived from [TelmoSampaio](https://www.youtube.com/channel/UCADAkBGiLWIPkCu8D1R1M6g).
+### **Logo**
+* BREW RIGHT logo was created by using [TRUIC](https://howtostartanllc.com/logo-maker) which is free to use.  
 
 ### **Acknowledgement**
 * I have the inspiration of creating this project from my passion for coffee. I am keen on different types of coffee brewing types. 
